@@ -24,6 +24,10 @@ const main = () => {
     console.log(x)
   //  console.log(checkbox.name)
     div.appendChild(checkbox)
+    checkbox.addEventListener('change', (event) => {
+      console.log('div.addEventListener')
+      checkbox.disabled = true
+    })
   }
 
 //  x.forEach(function (element) { document.querySelector('input[name=' + element.name + ']').addEventListener('click', (event) => { console.log('hello') }) })
