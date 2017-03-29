@@ -26,8 +26,8 @@ const main = () => {
     div.appendChild(checkbox)
   }
 
-console.log( x.forEach(function (element) { document.querySelector('input[name=' + element.name + ']').addEventListener('click', (event) => { console.log('hello') }) })
-})
+//  x.forEach(function (element) { document.querySelector('input[name=' + element.name + ']').addEventListener('click', (event) => { console.log('hello') }) })
+}
 
 document.addEventListener('DOMContentLoaded', main)
 
