@@ -18,16 +18,16 @@ const main = () => {
     let checkbox = document.createElement('input')
     checkbox.type = 'checkbox'
     checkbox.name = 'todo' + i++
+    // x.push(0)
+    // console.log(x)
     x.push(checkbox)
-//    console.log(checkbox.name)
+    console.log(x)
+  //  console.log(checkbox.name)
     div.appendChild(checkbox)
   }
 
-  // x.forEach(function(element)) {
-  //
-  // }
-//  console.log(checkbox.name)
-}
+console.log( x.forEach(function (element) { document.querySelector('input[name=' + element.name + ']').addEventListener('click', (event) => { console.log('hello') }) })
+})
 
 document.addEventListener('DOMContentLoaded', main)
 
