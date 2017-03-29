@@ -1,23 +1,32 @@
 if (process.env.NODE_ENV !== 'production') require('./index.html')
 import './styles/screen.scss'
 
-console.log('here')
-
 const main = () => {
-  const ulist = document.querySelector('ul.listOfCheckboxes')
+  // const ulist = document.querySelector('ul.listOfCheckboxes')
+  // const liElement = document.createElement('li')
   const oneList = document.querySelector('input[type=button]')
   const div = document.querySelector('div.container')
-  const body = document.querySelector('body')
+//  const body = document.querySelector('body')
+  let x = []
+  let i = 0
 
   oneList.addEventListener('click', (event) => {
     updateButton()
   })
 
   const updateButton = () => {
-    console.log('updateButton')
-    div.style.backgroundColor = 'red'
-    body.style.backgroundColor = 'purple'
+    let checkbox = document.createElement('input')
+    checkbox.type = 'checkbox'
+    checkbox.name = 'todo' + i++
+    x.push(checkbox)
+//    console.log(checkbox.name)
+    div.appendChild(checkbox)
   }
+
+  // x.forEach(function(element)) {
+  //
+  // }
+//  console.log(checkbox.name)
 }
 
 document.addEventListener('DOMContentLoaded', main)
