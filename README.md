@@ -1,4 +1,4 @@
 # One List
 
 
-Simple todo list written in Vanilla Javascript
+Simple todo list written in **Vanilla Javascript.**
